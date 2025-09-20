@@ -103,32 +103,46 @@ header {
 .nav-logo { height: 36px; width: auto; display:block; }
 .logo-text { font-weight:600; color:#e9e7ff; font-size:1rem; }
 
-/* Make nav links scale on smaller screens */
+/* Base nav styles */
 nav ul {
   display: flex;
-  flex-wrap: wrap;    /* allow wrapping if needed */
-  gap: 12px;          /* space between links */
+  gap: 20px;
   list-style: none;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap; /* allows wrapping on very small screens */
 }
 
 nav ul li a {
-  font-size: 1rem;    /* default size */
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
   padding: 6px 10px;
-  white-space: nowrap; /* keep words intact */
+  border-radius: 6px;
+  white-space: nowrap; /* keeps words from breaking */
 }
 
-/* Medium screens */
+nav ul li a:hover {
+  background: rgba(127, 90, 240, 0.15);
+}
+
+/* 🔹 Mobile adjustments */
 @media (max-width: 900px) {
+  nav ul {
+    gap: 14px;
+  }
+
   nav ul li a {
     font-size: 0.9rem;
     padding: 5px 8px;
   }
 }
 
-/* Small screens */
 @media (max-width: 600px) {
   nav ul {
-    justify-content: flex-end;  /* stay on right */
+    gap: 10px;
+    justify-content: center; /* centers links instead of right-align */
   }
 
   nav ul li a {
@@ -136,6 +150,7 @@ nav ul li a {
     padding: 4px 6px;
   }
 }
+
 nav ul li a {
   color: #fff; text-decoration:none; font-size:0.95rem;
   padding:6px 8px; border-radius:6px;
