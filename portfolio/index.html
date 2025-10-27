@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Abdul Basit | Portfolio</title>
+  <!-- Favicon for most browsers -->
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+
+<!-- Apple devices -->
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+<!-- Android/Chrome -->
+<link rel="manifest" href="site.webmanifest">
+
+<!-- Extra sizes for PWA / homescreen -->
+<link rel="icon" type="image/png" sizes="192x192" href="web-app-manifest-192x192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="web-app-manifest-512x512.png">
+
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <!-- Header / Navigation (compact horizontal) -->
+  <header>
+    <div class="logo-area">
+      <img src="assets/images/paw.png" alt="LOJYC Logo" class="nav-logo">
+      <span class="logo-text">Abdul Basit</span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>Abdul Basit</h1>
+        <h2>Technical Artist &amp; Game Designer</h2>
+      </div>
+    </div>
+    <div class="scroll-down">↓</div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>
+      Game Designer & Technical Artist with 5+ years of experience in quest and
+      level design, procedural tools, and cinematic storytelling. Skilled in Unreal
+      Engine, Houdini, and Unity. I blend creative direction with technical systems
+      to build polished, scalable experiences.
+    </p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card"><h3>Game Design</h3><p>Quest & level design, branching dialogue, encounter pacing</p></div>
+      <div class="skill-card"><h3>Technical Art</h3><p>Houdini Digital Assets, procedural worldbuilding, shaders, VFX, Vex scripting, Pipeline Optimization & Automation</p></div>
+      <div class="skill-card"><h3>Engines</h3><p>Houdini, Unreal Engine, Unity, Blender, Substance Painter, Maya</p></div>
+      <div class="skill-card"><h3>Cinematics</h3><p>Storyboards, cutscenes, UI/UX</p></div>
+      <div class="skill-card"><h3>Collaboration</h3><p>Teamwork, iterative reviews, pipeline improvements</p></div>
+    </div>
+
+    <!-- Scrolling software icons — put your engine/tool icons in Assets/Icons/ -->
+    <div class="software-strip">
+      <div class="strip-track">
+        <div class="icon-set">
+          <img src="assets/images/unreal.png" alt="unreal">
+          <img src="assets/images/houdini.png" alt="houdini">
+          <img src="assets/images/unity.png" alt="unity">
+          <img src="assets/images/blender.png" alt="blender">
+          <img src="assets/images/ps.png" alt="photoshop">
+          <img src="assets/images/substance.png" alt="substance">
+          <img src="assets/images/maya.png" alt="maya">
+        </div>
+      </div>
+    </div>
+    
+
+  <!-- Projects (LIST format) -->
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+
+    <!--
+      HOW TO ADD A NEW PROJECT (quick):
+      1) Copy one .project-card below and update data-project to the next integer.
+      2) Put your images in: Assets/ProjectX/Images/
+         Example: Assets/Project7/Images/screenshot1.jpg
+      3) Add the file names to the 'projectImages' mapping in script.js (key = numeric id).
+      4) Update title/description text.
+    -->
+    <div class="project-list">
+
+      <div class="project-card" data-project="1">
+        <div class="thumbnail"><img src="assets/project1/images/screenshot1.jpg" alt="Project 1"></div>
+        <div class="project-info">
+          <h3>Sand Man</h3>
+          <p>A procedurally genrated Sand man who drops sand particles as he walks. Click to open gallery.</p>
+        </div>
+      </div>
+
+      <div class="project-card" data-project="2">
+        <div class="thumbnail"><img src="assets/project2/images/screenshot1.jpg" alt="Project 2"></div>
+        <div class="project-info">
+          <h3>T Tool</h3>
+          <p>Procedurally genrated T tool that can be made into any tool style. Click to open gallery.</p>
+        </div>
+      </div>
+
+      <div class="project-card" data-project="3">
+        <div class="thumbnail"><img src="assets/project3/images/screenshot1.jpg" alt="Project 3"></div>
+        <div class="project-info">
+          <h3>Project 3</h3>
+          <p>Short description for Project 3. Click to open gallery.</p>
+        </div>
+      </div>
+
+      <div class="project-card" data-project="4">
+        <div class="thumbnail"><img src="assets/project4/images/screenshot1.jpg" alt="Project 4"></div>
+        <div class="project-info">
+          <h3>Project 4</h3>
+          <p>Short description for Project 4. Click to open gallery.</p>
+        </div>
+      </div>
+
+      <div class="project-card" data-project="5">
+        <div class="thumbnail"><img src="assets/project5/images/screenshot1.jpg" alt="Project 5"></div>
+        <div class="project-info">
+          <h3>Project 5</h3>
+          <p>Short description for Project 5. Click to open gallery.</p>
+        </div>
+      </div>
+
+      <div class="project-card" data-project="6">
+        <div class="thumbnail"><img src="assets/project6/images/screenshot1.jpg" alt="Project 6"></div>
+        <div class="project-info">
+          <h3>Project 6</h3>
+          <p>Short description for Project 6. Click to open gallery.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Full-screen Gallery Modal -->
+  <div id="galleryModal" class="modal" aria-hidden="true">
+    <span class="close" id="galleryClose">✕</span>
+    <div class="modal-content">
+      <button id="prevBtn" class="gallery-arrow">‹</button>
+      <div class="media-wrap">
+        <!-- image/video inserted dynamically -->
+        <img id="galleryImage" src="" alt="">
+        <video id="galleryVideo" src="" controls style="display:none;"></video>
+      </div>
+      <button id="nextBtn" class="gallery-arrow">›</button>
+    </div>
+  </div>
+
+  <!-- Documents -->
+<section id="documents" class="section">
+  <h2>Design Documents</h2>
+  <div class="doc-list">
+
+    <!-- Example Document 1 -->
+    <div class="doc-card" data-doc="assets/docs/GDD.pdf">
+  <div class="doc-thumbnail">
+    <iframe src="assets/docs/GDD.pdf#view=FitH" frameborder="0"></iframe>
+  </div>
+  <div class="doc-info">
+    <h3>Game Design Document</h3>
+    <p>Core systems, mechanics, and overall design philosophy.</p>
+  </div>
+</div>
+
+    <!-- Example Document 2 -->
+    <div class="doc-card" data-doc="assets/docs/QuestDesign.pdf">
+  <div class="doc-thumbnail">
+    <iframe src="assets/docs/QuestDesign.pdf#view=FitH" frameborder="0"></iframe>
+  </div>
+  <div class="doc-info">
+    <h3>Quest Design Document</h3>
+    <p>Quest flow, branching choices, and pacing notes.</p>
+  </div>
+</div>
+
+  </div>
+</section>
+
+<!-- Document modal -->
+<div id="docModal" class="modal" aria-hidden="true">
+  <span class="close" id="docClose">✕</span>
+  <div class="modal-content">
+    <iframe id="docFrame" src="" frameborder="0"></iframe>
+  </div>
+</div>
+
+  <!-- ===== Contact Section ===== -->
+<section id="contact">
+  <h2>Contact Me</h2>
+  
+  <div class="contact-icons">
+    <!-- Email -->
+    <a href="mailto:abdulbasit56592@gmail.com" target="_blank" rel="noopener noreferrer">
+      <img src="assets/images/email.png" alt="Email">
+    </a>
+
+    <!-- LinkedIn -->
+    <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+      <img src="assets/images/linkedin.png" alt="LinkedIn">
+    </a>
+
+    <!-- ArtStation -->
+    <a href="https://www.artstation.com/lojyc1" target="_blank" rel="noopener noreferrer">
+      <img src="assets/images/artstation.png" alt="ArtStation">
+    </a>
+  </div>
+</section>
+
+  <footer>
+    <p>© 2025 Abdul Basit. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
